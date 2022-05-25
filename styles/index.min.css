@@ -1,2 +1,2 @@
-html,body{margin:0;padding:0}.main{height:100vh;background-color:beige}@media(max-width: 1000px){.main{background-color:green}}
+html,body{margin:0;padding:0}.main{height:100vh;background-color:beige;display:grid;grid-template-columns:repeat(auto-fit, 300px);grid-template-rows:repeat(auto-fit, 300px);gap:50px 50px;justify-content:center;transition:all 2s ease-out 100ms}.main .child{height:300px;width:300px;background-color:#000}@media(max-width: 1399px)and (min-width: 900px){.main{background-color:#ecec9a;transition:all 2s ease-out 100ms}.main .child{background-color:#292929}}@media(max-width: 899px){.main{background-color:#e9e950;transition:all 2s ease-out 100ms}.main .child{background-color:#5a5a5a}}
 /*# sourceMappingURL=index.min.css.map */

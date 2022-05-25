@@ -7,7 +7,18 @@ body {
 .main {
   height: 100vh;
   background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit, 300px);
+  gap: 50px 50px;
+  justify-content: center;
+  transition: all 2s ease-out 100ms;
 
+  .child {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+  }
   // .child1 {
   //     height: 100px;
   //     width: 100px;
@@ -22,9 +33,25 @@ body {
   // }
 }
 
-// Media Quieries - min or max width
-@media (max-width: 1000px) {
+// Media Quieries - min or/and max width
+@media (max-width: 1399px) and (min-width: 900px) {
   .main {
-    background-color: green;
+    background-color: rgb(236, 236, 154);
+    transition: all 2s ease-out 100ms;
+
+    .child {
+      background-color: rgb(41, 41, 41);
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .main {
+    background-color: rgb(233, 233, 80);
+    transition: all 2s ease-out 100ms;
+
+    .child {
+      background-color: rgb(90, 90, 90);
+    }
   }
 }
