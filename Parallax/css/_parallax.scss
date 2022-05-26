@@ -1,0 +1,53 @@
+// Parallax Effect
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 80px;
+  background-color: rgb(230, 82, 82);
+
+  // el
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    line-height: 40px;
+    display: inline-block;
+    padding: 20px;
+    color: gold;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: 100vh;
+
+  // sections
+  .section {
+    background-size: cover;
+  }
+
+  #section1 {
+    background-image: url(/Parallax/images/bg1.png);
+  }
+  #section2 {
+    background-image: url(/Parallax/images/bg2.png);
+  }
+  #section3 {
+    background-image: url(/Parallax/images/bg3.jpg);
+  }
+  #section4 {
+    background-image: url(/Parallax/images/bg4.png);
+  }
+}

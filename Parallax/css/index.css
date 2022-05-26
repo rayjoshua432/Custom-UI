@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 80px;
+  background-color: rgb(230, 82, 82);
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  line-height: 40px;
+  display: inline-block;
+  padding: 20px;
+  color: gold;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: 100vh;
+}
+.container .section {
+  background-size: cover;
+}
+.container #section1 {
+  background-image: url(/Parallax/images/bg1.png);
+}
+.container #section2 {
+  background-image: url(/Parallax/images/bg2.png);
+}
+.container #section3 {
+  background-image: url(/Parallax/images/bg3.jpg);
+}
+.container #section4 {
+  background-image: url(/Parallax/images/bg4.png);
+}/*# sourceMappingURL=index.css.map */
