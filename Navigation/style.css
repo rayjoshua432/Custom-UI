@@ -1,18 +1,67 @@
-html, body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(53, 53, 53);
 }
 
-.nav {
-    height: 80px;
-    background-color: red;
+.logo {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    order: 3;
 }
 
-.nav ul {
-    display: inline-block;
+nav {
+    order: 1;
 }
 
-.nav ul li {
-    display: inline-block;
+li, a, button {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding: 20px;
 }
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 8px 30px;
+}
+
+.nav-links li a {
+    transition: all 0.2s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(55, 83, 241);
+}
+
+.nav-button {
+    order: 2;
+}
+
+button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: rgba(55, 83, 241,1);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
