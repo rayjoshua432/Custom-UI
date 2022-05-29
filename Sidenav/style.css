@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+header {
+    height: 100vh;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 40px 300px;
+    place-items: center;
+    background-color: rgb(255, 226, 97);
+    z-index: 10;
+    transition: all 0.5s ease 0s;
+}
+
+.side-nav.nav-close {
+    margin-left: -300px;
+    grid-row: 2/3;
+}
+
+.side-nav.nav-open {
+    margin-left: 0;
+}
+
+.close {
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    place-self: end;
+    cursor: pointer;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.side-nav nav {
+    font-size: 30px;
+    width: 100%;
+    place-self: start;
+    text-align: center;
+}
+
+.side-nav .nav-links li {
+    list-style: none;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+}
+
+.side-nav .nav-links li:hover {
+    background-color: antiquewhite;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+main .ham-menu img {
+    position: absolute;
+    left: 10px;
+    padding-top: 10px;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
